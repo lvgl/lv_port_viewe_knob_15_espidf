@@ -58,7 +58,7 @@ static esp_lcd_touch_handle_t touch_handle = NULL;
 #define EXAMPLE_LCD_BITS_PER_PIXEL (16)
 #define EXAMPLE_LCD_DRAW_BUFF_DOUBLE (1)
 #define EXAMPLE_LCD_LVGL_AVOID_TEAR (1)
-#define EXAMPLE_LCD_DRAW_BUFF_HEIGHT (40)
+#define EXAMPLE_LCD_DRAW_BUFF_HEIGHT (60)
 #define EXAMPLE_LCD_BK_LIGHT_ON_LEVEL 1
 #define EXAMPLE_LCD_BK_LIGHT_OFF_LEVEL !EXAMPLE_LCD_BK_LIGHT_ON_LEVEL
 #define EXAMPLE_PIN_NUM_LCD_CS (GPIO_NUM_12)
@@ -111,9 +111,9 @@ typedef enum
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 #define EXAMPLE_LVGL_BUFF_SIZE (EXAMPLE_LCD_H_RES * 40)
 #define EXAMPLE_LVGL_TICK_PERIOD_MS 2
-#define EXAMPLE_LVGL_TASK_MAX_DELAY_MS 500
-#define EXAMPLE_LVGL_TASK_MIN_DELAY_MS 2
-#define EXAMPLE_LVGL_TASK_STACK_SIZE (4 * 1024)
+#define EXAMPLE_LVGL_TASK_MAX_DELAY_MS 50
+#define EXAMPLE_LVGL_TASK_MIN_DELAY_MS 1
+#define EXAMPLE_LVGL_TASK_STACK_SIZE (8 * 1024)
 #define EXAMPLE_LVGL_TASK_PRIORITY 2
 
 #define HF_ws2812 1
@@ -468,8 +468,8 @@ void app_main(void)
     const esp_lcd_panel_io_spi_config_t io_config = {
         .dc_gpio_num = -1,                     // EXAMPLE_PIN_NUM_LCD_CS,
         .cs_gpio_num = EXAMPLE_PIN_NUM_LCD_CS, //-1,
-        .pclk_hz = 40 * 1000 * 1000,
-        .trans_queue_depth = 10,
+        .pclk_hz = 80 * 1000 * 1000,
+        .trans_queue_depth = 20,
         .lcd_cmd_bits = 32,
         .lcd_param_bits = 8,
         .spi_mode = 0,

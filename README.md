@@ -10,7 +10,7 @@ You can purchase Viewe Touch Knob Display from https://viewedisplay.com/product/
 
 ## Benchmark
 
-The display is driven using QSPI interface. Two display LVGL draw buffers are used (472x40x2) with `LV_DISPLAY_RENDER_MODE_PARTIAL` mode.
+The display is driven using QSPI interface. Two display LVGL draw buffers are used (472x60x2) with `LV_DISPLAY_RENDER_MODE_PARTIAL` mode.
 
 Check out Viewe Touch Knob Display in action, running LVGL's benchmark demo:
 <a href="https://www.youtube.com/watch?v=uHdSQY_k2Mg"> <img src="assets/preview.png"  width="70%"/> </a>
@@ -19,23 +19,23 @@ Check out Viewe Touch Knob Display in action, running LVGL's benchmark demo:
 
 | Name                      | Avg. CPU  | Avg. FPS  | Avg. time | render time   | flush time    |
 | ------------------------- | --------- | --------- | --------- | ------------- | ------------- |
-| Empty screen              | 94%       | 23        | 39        | 21            | 18            |
-| Moving wallpaper          | 98%       | 19        | 48        | 39            | 9             |
-| Single rectangle          | 21%       | 28        | 2         | 1             | 1             |
-| Multiple rectangles       | 57%       | 28        | 19        | 15            | 4             |
-| Multiple RGB images       | 50%       | 28        | 15        | 14            | 1             |
-| Multiple ARGB images      | 70%       | 28        | 24        | 23            | 1             |
-| Rotated ARGB images       | 63%       | 28        | 21        | 20            | 1             |
-| Multiple labels           | 95%       | 22        | 40        | 37            | 3             |
-| Screen sized text         | 99%       | 7         | 126       | 118           | 8             |
-| Multiple arcs             | 42%       | 28        | 10        | 9             | 1             |
-| Containers                | 53%       | 28        | 23        | 22            | 1             |
-| Containers with overlay   | 86%       | 17        | 55        | 49            | 6             |
-| Containers with opa       | 59%       | 27        | 25        | 24            | 1             |
-| Containers with opa_layer | 78%       | 23        | 39        | 38            | 1             |
-| Containers with scrolling | 97%       | 10        | 91        | 82            | 9             |
-| Widgets demo              | 99%       | 5         | 143       | 136           | 7             |
-| All scenes avg.           | 72%       | 21        | 44        | 40            | 4             |
+| Empty screen              | 69%       | 27        | 22        | 7             | 15            |
+| Moving wallpaper          | 70%       | 28        | 23        | 13            | 10            |
+| Single rectangle          | 8%        | 28        | 0         | 0             | 0             |
+| Multiple rectangles       | 37%       | 28        | 12        | 8             | 4             |
+| Multiple RGB images       | 24%       | 28        | 6         | 5             | 1             |
+| Multiple ARGB images      | 45%       | 28        | 14        | 13            | 1             |
+| Rotated ARGB images       | 44%       | 28        | 14        | 14            | 0             |
+| Multiple labels           | 55%       | 28        | 18        | 15            | 3             |
+| Screen sized text         | 96%       | 12        | 79        | 72            | 7             |
+| Multiple arcs             | 22%       | 28        | 4         | 4             | 0             |
+| Containers                | 22%       | 28        | 8         | 7             | 1             |
+| Containers with overlay   | 94%       | 25        | 35        | 29            | 6             |
+| Containers with opa       | 29%       | 28        | 12        | 11            | 1             |
+| Containers with opa_layer | 42%       | 28        | 17        | 17            | 0             |
+| Containers with scrolling | 95%       | 23        | 39        | 33            | 6             |
+| Widgets demo              | 99%       | 14        | 54        | 49            | 5             |
+| All scenes avg.           | 53%       | 25        | 21        | 18            | 3             |
 
 ## Specification
 
