@@ -13,7 +13,7 @@ You can purchase Viewe Touch Knob Display from https://viewedisplay.com/product/
 The display is driven using QSPI interface. Two display LVGL draw buffers are used (472x60x2) with `LV_DISPLAY_RENDER_MODE_PARTIAL` mode.
 
 Check out Viewe Touch Knob Display in action, running LVGL's benchmark demo:
-<a href="https://www.youtube.com/watch?v=uHdSQY_k2Mg"> <img src="assets/preview.png"  width="70%"/> </a>
+<a href="https://www.youtube.com/watch?v=jtXmBxqtBEE"> <img src="assets/preview.png"  width="70%"/> </a>
 
 ### Benchmark Summary (9.3.0 )
 
@@ -52,7 +52,7 @@ Check out Viewe Touch Knob Display in action, running LVGL's benchmark demo:
 - **Color Depth:** 16-bit
 - **Technology:** AMOLED
 - **DPI:** 439px/inch
-- **Touch Pad:** Capacitive (CST816S)
+- **Touch Pad:** Capacitive (CST820)
 
 ### Connectivity
 - Integrated Rotary Knob
